@@ -110,5 +110,13 @@ public class IntArrayWorker
     }
     return count;
   }
+
+  public int getColTotal(int c){
+    int total =0;
+    for (int i=0; i<matrix.length; i++){
+      total+=matrix[i][c];
+    }
+    return total;
+  }
  
 }
