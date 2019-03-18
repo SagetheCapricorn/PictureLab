@@ -111,6 +111,22 @@ public class IntArrayWorker
     return count;
   }
 
+  public int getLargest()
+  {
+      int bigger = 0;
+      for (int i = 0; i<matrix.length;i++){
+          for(int j=0;j<matrix.length-1;j++){
+              if(matrix[i][j] > matrix[(i+1)][(j+1)]){
+                  bigger = matrix[i][j];
+              }
+          }
+      }
+      return bigger;
+
+  }
+
+
+
   public int getColTotal(int c){
     int total =0;
     for (int i=0; i<matrix.length; i++){
@@ -118,5 +134,5 @@ public class IntArrayWorker
     }
     return total;
   }
- 
+
 }
