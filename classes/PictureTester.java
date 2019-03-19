@@ -6,8 +6,10 @@
  * 
  * @author Barbara Ericson 
  */
-public class PictureTester
-{
+public class PictureTester{
+
+
+
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
@@ -57,6 +59,12 @@ public class PictureTester
     canvas.negate();
     canvas.explore();
   }
+
+  public static void KeepOnlyBlue{
+    Piture swan = new
+  }
+
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -64,6 +72,8 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+    //testZeroBlue();
+    testKeepOnlyBlue();
     //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
