@@ -60,8 +60,10 @@ public class PictureTester{
     canvas.explore();
   }
 
-  public static void KeepOnlyBlue{
-    Piture swan = new
+  public static void testKeepOnlyBlue(){
+    Picture swan = new Picture("swan.jpg");
+    swan.KeepOnlyBlue();
+    swan.explore();
   }
 
 
