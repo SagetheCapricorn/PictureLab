@@ -66,6 +66,12 @@ public class PictureTester{
     swan.explore();
   }
 
+  public static void testGrayscale(){
+    Picture swan = new Picture("gorge.jpg");
+    swan.grayscale();
+    swan.explore();
+  }
+
 
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -75,13 +81,13 @@ public class PictureTester{
     // and comment out the ones you don't want
     // to run
     //testZeroBlue();
-    testKeepOnlyBlue();
+    //testKeepOnlyBlue();
     //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    //testGrayscale();
+    //testNegate();
+    testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
