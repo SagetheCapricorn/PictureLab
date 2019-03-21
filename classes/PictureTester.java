@@ -72,6 +72,12 @@ public class PictureTester{
     swan.explore();
   }
 
+  public static void testMirrorVerticalRightToLeft(){
+    Picture barbaraS = new Picture("barbaraS.jpg");
+    barbaraS.mirrorVerticalRightToLeft();
+    barbaraS.explore();
+  }
+
 
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -87,7 +93,7 @@ public class PictureTester{
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
-    testGrayscale();
+    //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
@@ -104,5 +110,6 @@ public class PictureTester{
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+    testMirrorVerticalRightToLeft();
   }
 }
