@@ -82,6 +82,11 @@ public class PictureTester{
     swan.mirrorHorizontalBotToTop();
     swan.explore();
   }
+  public static  void testmirrorHorizontal(){
+    Picture swan = new Picture( "gorge.jpg");
+    swan.mirrorHorizontal();
+    swan.explore();
+  }
 
 
   /** Main method for testing.  Every class can have a main
@@ -101,7 +106,8 @@ public class PictureTester{
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();
-    testmirrorHorizontalBotToTop();
+    //testmirrorHorizontal();
+    //testmirrorHorizontalBotToTop();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
