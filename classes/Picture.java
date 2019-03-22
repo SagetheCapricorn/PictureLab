@@ -226,7 +226,7 @@ public void mirrorVerticalRightToLeft(){
   }
   
   /** copy from the passed fromPic to the
-    * specified startRow and startCol in the
+    * specified startRow and startCol in the 
     * current picture
     * @param fromPic the picture to copy from
     * @param startRow the start row to copy to
