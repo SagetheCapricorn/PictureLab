@@ -77,6 +77,11 @@ public class PictureTester{
     barbaraS.mirrorVerticalRightToLeft();
     barbaraS.explore();
   }
+  public static void testmirrorHorizontalBotToTop(){
+    Picture swan = new Picture("gorge.jpg");
+    swan.mirrorHorizontalBotToTop();
+    swan.explore();
+  }
 
 
   /** Main method for testing.  Every class can have a main
@@ -95,9 +100,10 @@ public class PictureTester{
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
+    //testMirrorVertical();
+    testmirrorHorizontalBotToTop();
     //testMirrorTemple();
-    testMirrorArms();
+    //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
