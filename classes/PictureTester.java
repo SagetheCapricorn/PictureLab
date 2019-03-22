@@ -24,7 +24,7 @@ public class PictureTester{
   {
     Picture caterpillar = new Picture("caterpillar.jpg");
     caterpillar.explore();
-    caterpillar.mirrorVertical();
+    caterpillar.mirrorHorizontal();
     caterpillar.explore();
   }
   
@@ -95,7 +95,7 @@ public class PictureTester{
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    //testMirrorVertical();
+    testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
@@ -110,6 +110,6 @@ public class PictureTester{
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-    testMirrorVerticalRightToLeft();
+    //testMirrorVerticalRightToLeft();
   }
 }
