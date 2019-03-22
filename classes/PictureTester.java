@@ -97,7 +97,7 @@ public class PictureTester{
     //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
-    //testMirrorArms();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
@@ -110,6 +110,6 @@ public class PictureTester{
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-    testMirrorVerticalRightToLeft();
+    //testMirrorVerticalRightToLeft();
   }
 }
