@@ -114,7 +114,7 @@ public class PictureTester{
     //testmirrorHorizontal();
     //testmirrorHorizontalBotToTop();
     //testMirrorTemple();
-    testMirrorArms();
+    //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
@@ -129,5 +129,9 @@ public class PictureTester{
     //testGetAverageForColumn(0);
     //testMirrorVerticalRightToLeft();
 
+
+    Picture p = new Picture("seagull.jpg");
+    p.mirrorGull();
+    p.explore();
   }
 }
