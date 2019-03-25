@@ -301,6 +301,24 @@ public void mirrorVerticalRightToLeft(){
     }   
   }
 
+  public void copy(Picture fromPic,
+                   int startRow, int startCol, int startrow2,int startcol2,int endrow2,int endcol2)
+  {
+    Pixel fromPixel = null;
+    Pixel toPixel = null;
+    Pixel[][] toPixels = this.getPixels2D();
+    Pixel[][] fromPixels = fromPic.getPixels2D();
+    for (int fromRow = startrow2, toRow = startRow; fromRow < endrow2 && toRow < toPixels.length; fromRow++, toRow++)
+    {
+      for (int fromCol = startcol2, toCol = startCol; fromCol < endcol2 && toCol < toPixels[0].length; fromCol++, toCol++)
+      {
+        fromPixel = fromPixels[fromRow][fromCol];
+        toPixel = toPixels[toRow][toCol];
+        toPixel.setColor(fromPixel.getColor());
+      }
+    }
+  }
+
   /** Method to create a collage of several pictures */
   public void createCollage()
   {
@@ -326,18 +344,22 @@ public void mirrorVerticalRightToLeft(){
   {
     Pixel leftPixel = null;
     Pixel rightPixel = null;
+    Pixel bottomPixel = null;
     Pixel[][] pixels = this.getPixels2D();
     Color rightColor = null;
-    for (int row = 0; row < pixels.length; row++)
+    Color bottomColor = null;
+    for (int row = 0; row < pixels.length-1; row++)
     {
       for (int col = 0; 
            col < pixels[0].length-1; col++)
       {
         leftPixel = pixels[row][col];
         rightPixel = pixels[row][col+1];
+        bottomPixel = pixels[row+1][col];
         rightColor = rightPixel.getColor();
+        bottomColor = bottomPixel.getColor();
         if (leftPixel.colorDistance(rightColor) > 
-            edgeDist)
+            edgeDist || leftPixel.colorDistance(bottomColor)>edgeDist)
           leftPixel.setColor(Color.BLACK);
         else
           leftPixel.setColor(Color.WHITE);

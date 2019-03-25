@@ -93,6 +93,13 @@ public class PictureTester{
     swan.explore();
   }
 
+  public static void testCopy(){
+    Picture p = new Picture("beach.jpg");
+    p.explore();
+    Picture swan = new Picture("swan.jpg");
+    swan.copy(p,200,200,160,300,240,400);
+    swan.explore();
+  }
 
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -119,7 +126,7 @@ public class PictureTester{
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
-    //testEdgeDetection();
+    testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
@@ -128,10 +135,8 @@ public class PictureTester{
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
     //testMirrorVerticalRightToLeft();
+    //
 
 
-    Picture p = new Picture("seagull.jpg");
-    p.mirrorGull();
-    p.explore();
   }
 }
