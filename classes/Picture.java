@@ -202,27 +202,48 @@ public void mirrorVerticalRightToLeft(){
     System.out.println(count);
   }
 
+
   public void mirrorArms(){
-    int mirrorPoint = 276;
-    Pixel leftPixel = null;
-    Pixel rightPixel = null;
-    int count = 0;
+    int mirrorPoint = 195;
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
+
     Pixel[][] pixels = this.getPixels2D();
 
-    // loop through the rows
-    for (int row = 27; row < 97; row++)
+   
+    for (int row = 160; row < mirrorPoint; row++)
     {
-      // loop from 13 to just before the mirror point
-      for (int col = 13; col < mirrorPoint; col++)
+
+      for (int col = 100; col < 170; col++)
       {
-        count += 1;
-        leftPixel = pixels[row][col];
-        rightPixel = pixels[row]
-                [mirrorPoint - col + mirrorPoint];
-        rightPixel.setColor(leftPixel.getColor());
+
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[mirrorPoint - row + mirrorPoint]
+                [col];
+        bottomPixel.setColor(topPixel.getColor());
       }
     }
-    System.out.println(count);
+
+    int mirrorPoint2 = 195;
+    Pixel topPixel2 = null;
+    Pixel bottomPixel2 = null;
+
+    Pixel[][] pixels2 = this.getPixels2D();
+
+
+    for (int row = 171; row < mirrorPoint2; row++)
+    {
+
+      for (int col = 238; col < 296; col++)
+      {
+
+        topPixel2 = pixels2[row][col];
+        bottomPixel2 = pixels2[mirrorPoint2 - row + mirrorPoint2]
+                [col];
+        bottomPixel2.setColor(topPixel2.getColor());
+      }
+    }
+
   }
   
   /** copy from the passed fromPic to the

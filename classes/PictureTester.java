@@ -87,6 +87,11 @@ public class PictureTester{
     swan.mirrorHorizontal();
     swan.explore();
   }
+  public static  void testMirrorArms(){
+    Picture swan = new Picture( "snowman.jpg");
+    swan.mirrorArms();
+    swan.explore();
+  }
 
 
   /** Main method for testing.  Every class can have a main
@@ -105,11 +110,11 @@ public class PictureTester{
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
+    //testMirrorVertical();
     //testmirrorHorizontal();
     //testmirrorHorizontalBotToTop();
     //testMirrorTemple();
-    //testMirrorArms();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
@@ -123,5 +128,6 @@ public class PictureTester{
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
     //testMirrorVerticalRightToLeft();
+
   }
 }
