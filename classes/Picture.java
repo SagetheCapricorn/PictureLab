@@ -277,8 +277,7 @@ public void mirrorVerticalRightToLeft(){
     * @param startRow the start row to copy to
     * @param startCol the start col to copy to
     */
-  public void copy(Picture fromPic, 
-                 int startRow, int startCol)
+  public void copy(Picture fromPic, int startRow, int startCol)
   {
     Pixel fromPixel = null;
     Pixel toPixel = null;
@@ -301,8 +300,7 @@ public void mirrorVerticalRightToLeft(){
     }   
   }
 
-  public void copy(Picture fromPic,
-                   int startRow, int startCol, int startrow2,int startcol2,int endrow2,int endcol2)
+  public void copy(Picture fromPic, int startRow, int startCol, int startrow2,int startcol2,int endrow2,int endcol2)
   {
     Pixel fromPixel = null;
     Pixel toPixel = null;
@@ -397,6 +395,27 @@ public void mirrorVerticalRightToLeft(){
         }
       }
     }
+  }
+  public void myCollage(){
+
+    Picture swan = new Picture("Swan.jpg");
+    swan.grayscale();
+    this.copy(swan,200,160,130,30,200,150);
+
+
+    Picture barb = new Picture("robot.jpg");
+    barb.KeepOnlyBlue();
+    this.copy(barb,160,120,11,32,32,40);
+
+
+    Picture koa = new Picture("koala.jpg");
+    koa.mirrorArms();
+    this.copy(koa,32,100,160,170,200,215);
+
+
+
+
+
   }
 
 

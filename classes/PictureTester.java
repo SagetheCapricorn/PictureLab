@@ -100,6 +100,11 @@ public class PictureTester{
     swan.copy(p,200,200,160,300,240,400);
     swan.explore();
   }
+  public static void testmyCollage(){
+    Picture p = new Picture("temple.jpg");
+    p.myCollage();
+    p.explore();
+  }
 
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -124,9 +129,9 @@ public class PictureTester{
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testmyCollage();
     //testCopy();
-    testEdgeDetection();
+    //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
